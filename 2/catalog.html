@@ -6,13 +6,12 @@
     <base href="https://htmlacademy-htmlcss.github.io/315091-gllacy-34/2/">
 </head>
   <body>
-    <h1 class="v">Каталог</h1>
     <header class="main-header">
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">
-              <img src="#" alt="">
+              <img src="#" alt="Логотип Глейси">
             </a>
           </li>
           <li class="navigation-item">
@@ -57,11 +56,10 @@
             <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
+            <a class="breadcrumbs-link">Каталог</a>
           </li>
         </ul>
-        <h2>Сливочное мороженое</h2>
-
+        <h1>Сливочное мороженое</h1>
         <section class="sort">
           <h2 class="visually-hidden">Фильтр мороженого</h2>
           <form class="sort-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -69,6 +67,9 @@
               <legend>Сортировка:</legend>
               <select id="sort-by" name="sort-by">
                 <option value="by-popularity">по популярности</option>
+                <option value="by-cheap">сначала дешёвые</option>
+                <option value="by-expensive">сначала дорогие</option>
+                <option value="by-new">новинки</option>
               </select>
             </fieldset>
 
@@ -267,6 +268,7 @@
         </section>
 
         <button class="button">Показать ещё</button>
+
         <section class="pagination">
           <h2 class="visually-hidden">Пагинация</h2>
           <ul class="pagination-list">
@@ -342,7 +344,9 @@
           <img src="#" alt="Логотип HTMLAcademy">
         </a>
         <span>Сделано в</span>
-        <a href="https://htmlacademy.ru/">.html academy</a>
+        <a href="https://htmlacademy.ru/">
+          <img src="#" alt="Логотип HTMLAcademy">
+        </a>
         <span>&copy; 2021</span>
       </div>
     </footer>

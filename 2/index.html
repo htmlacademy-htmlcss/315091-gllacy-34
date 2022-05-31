@@ -6,7 +6,6 @@
     <base href="https://htmlacademy-htmlcss.github.io/315091-gllacy-34/2/">
 </head>
   <body>
-    <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
     <header class="main-header">
       <nav class="navigation">
         <ul class="navigation-list">
@@ -51,6 +50,7 @@
     </header>
 
     <main>
+      <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
       <section class="slider">
         <h2 class="visually-hidden">Промо мороженого</h2>
         <section class="slider-page">
@@ -58,52 +58,36 @@
           <div class="slider-text">
             <p>Нежный пломбир с клубничным джемом</p>
             <p>Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
-            <button type="button">Заказать</button>
+            <a href="#">Заказать</a>
           </div>
-          <div class="slider-img">
-            <button type="button">
-              <span class="visually-hidden">Предыдущий слайд</span>
-            </button>
-            <img src="#" alt="Клубничное мороженое в рожке">
-            <button type="button">
-              <span class="visually-hidden">Следующий слайд</span>
-            </button>
-          </div>
+          <img src="#" alt="Клубничное мороженое в рожке">
         </section>
         <section class="slider-page">
           <h3 class="visually-hidden">Банановое мороженое</h3>
           <div class="slider-text">
             <p>Сливочное мороженое со вкусом банана</p>
             <p>Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день. </p>
-            <button type="button">Заказать</button>
+            <a href="#">Заказать</a>
           </div>
-          <div class="slider-img">
-            <button type="button">
-              <span class="visually-hidden">Предыдущий слайд</span>
-            </button>
-            <img src="#" alt="Банановое мороженое в рожке">
-            <button type="button">
-              <span class="visually-hidden">Следующий слайд</span>
-            </button>
-          </div>
+          <img src="#" alt="Банановое мороженое в рожке">
         </section>
         <section class="slider-page">
           <h3 class="visually-hidden">Карамельное мороженое</h3>
           <div class="slider-text">
             <p>Карамельный пломбир с маршмеллоу</p>
             <p>Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
-            <button type="button">Заказать</button>
+            <a href="#">Заказать</a>
           </div>
-          <div class="slider-img">
-            <button type="button">
-              <span class="visually-hidden">Предыдущий слайд</span>
-            </button>
-            <img src="#" alt="Карамельное мороженое в рожке">
-            <button type="button">
-              <span class="visually-hidden">Следующий слайд</span>
-            </button>
-          </div>
+          <img src="#" alt="Карамельное мороженое в рожке">
         </section>
+        <div class="slider-arrows-buttons">
+          <button type="button">
+            <span class="visually-hidden">Предыдущий слайд</span>
+          </button>
+          <button type="button">
+            <span class="visually-hidden">Следующий слайд</span>
+          </button>
+        </div>
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
             <button type="button">
@@ -258,15 +242,15 @@
           <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="delivery-form-date">
               <label for="date">Дата</label>
-              <input type="text" name="delivery-date" id="date" placeholder="01.04.2020">
+              <input type="text" name="delivery-date" id="date" placeholder="01.04.2020" required>
             </p>
             <p class="delivery-form-telephone">
               <label for="telephone">Телефон</label>
-              <input type="tel" name="delivery-telephone" id="telephone" placeholder="+7 800 999-00-00">
+              <input type="tel" name="delivery-telephone" id="telephone" placeholder="+7 800 999-00-00" required>
             </p>
             <p class="delivery-form-address">
               <label for="address">Адрес</label>
-              <input type="text" name="address" id="address" placeholder="ул. Большая Конюшенная, 19/8">
+              <input type="text" name="address" id="address" placeholder="ул. Большая Конюшенная, 19/8" required>
             </p>
             <button type="submit">Отправить</button>
           </form>
@@ -327,7 +311,9 @@
           <img src="#" alt="Логотип HTMLAcademy">
         </a>
         <span>Сделано в</span>
-        <a href="https://htmlacademy.ru/">.html academy</a>
+        <a href="https://htmlacademy.ru/">
+          <img src="#" alt="Логотип HTMLAcademy">
+        </a>
         <span>&copy; 2021</span>
       </div>
     </footer>

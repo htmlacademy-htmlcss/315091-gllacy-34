@@ -1,0 +1,295 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/inter-400.woff2") format("woff2");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/inter-700.woff2") format("woff2");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("fonts/inter-900.woff2") format("woff2");
+
+  font-display: swap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565C66;
+  background-color: #FEAFC3;
+  font-weight: 400;
+}
+
+.main-header {
+  color: #2D3440;
+  background-color: #FEAFC3;
+}
+
+.navigation-link {
+  line-height: 20px;
+  color: #2D3440;
+  background-color: #FEAFC3;
+  text-align: center;
+  text-decoration: none;
+}
+
+.user-navigation-link {
+  line-height: 20px;
+  color: #2D3440;
+  background-color: #FEAFC3;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.user-navigation-text {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  background-color: #FFCBD8;
+}
+
+.slider-text-heading {
+  font-size: 36px;
+  line-height: 46px;
+  color: #2D3440;
+  background-color: #FEAFC3;
+  font-weight: 900;
+}
+
+.slider-text-description {
+  font-size: 18px;
+  line-height: 24px;
+  color: #2D3440;
+  background: #FEAFC3;
+}
+
+.slider-text-link,
+.present-item-link,
+.delivery-order label,
+.show-more-button {
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D3440;
+  background-color: #FCFCFC;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+.promo-presents-heading,
+.promo-popular-heading,
+.advantages-heading,
+.delivery-heading,
+.catalog h1 {
+  font-size: 32px;
+  line-height: 46px;
+  color: #2D3440;
+  font-weight: 900;
+}
+
+.promo-presents-heading,
+.promo-popular-heading,
+.catalog h1 {
+  background-color: #FEAFC3;
+}
+
+.promo-item-heading,
+.new-post-link {
+  font-size: 24px;
+  line-height: 30px;
+  color: #2D3440;
+  background-color: #FF7799;
+  font-weight: 700;
+}
+
+.promo-item-description {
+  color: #2D3440;
+  background-color: #FF7799;
+}
+
+.product-name,
+.product-price {
+  font-size: 20px;
+  line-height: 24px;
+  color: #2D3440;
+  background-color: #FCFCFC;
+  font-weight: 700;
+}
+
+.product-name {
+  text-align: center;
+}
+
+.product-description {
+  background-color: #FCFCFC;
+  text-align: center;
+}
+
+.advantages-heading {
+  background-color: #FCFCFC;
+}
+
+.advantages-item {
+  background-color: #FCFCFC;
+}
+
+.new-post {
+  background: url("/images/new-post-background.png") no-repeat;
+}
+
+.new-post,
+.delivery,
+.subscribe,
+.advantages,
+.product,
+.info {
+  background-color: #FCFCFC;
+}
+
+.new-post-text{
+  line-height: 20px;
+  background-color: #FCFCFC;
+}
+
+.new-post-link {
+  background-color: #FCFCFC;
+  text-decoration: none;
+}
+
+.delivery {
+  background-image: url("/images/delivery-background.png") no-repeat;
+}
+
+.subscribe-text,
+.delivery-heading,
+.delivery-description,
+.delivery-order-text {
+  background-color: #FCFCFC;
+}
+
+.subscribe-button,
+.delivery-button,
+.info-button {
+  line-height: 20px;
+  color: #FCFCFC;
+  background-color: #FF2F64;
+  font-weight: 700;
+  text-align: center;
+}
+
+.info-address,
+.info-telephone {
+  font-size: 20px;
+  line-height: 24px;
+  color: #2D3440;
+  background-color: #FCFCFC;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.info-working-hours {
+  font-size: 14px;
+}
+
+.documents-link {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  background-color: #FEAFC3;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.with-heart .documents-link {
+  font-weight: 700;
+}
+
+.on-catalog-page {
+  color: #FCFCFC;
+  background-color: #FF4A78;
+}
+
+.made-by,
+.made-by-text-link {
+  font-size: 12px;
+  line-height: 16px;
+  color: #2D3440;
+  background-color: #FEAFC3;
+}
+
+.breadcrumbs-link {
+font-size: 14px;
+line-height: 20px;
+color: #2D3440;
+background-color: #FEAFC3;
+font-weight: 700;
+}
+
+.to-main-link {
+  text-decoration: none;
+}
+
+.sort-form {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  background-color: #FEAFC3;
+}
+
+.sort-form-button {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  background-color: #FFCBD8;
+  font-weight: 700;
+  text-align: center;
+}
+
+.sort-by,
+.fat-list,
+.fillers-list {
+  background-color: #FFCBD8;
+}
+
+.pagination-link {
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D3440;
+  background-color: #FEAFC3;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.on-third-page {
+  background-color: #FCFCFC;
+}

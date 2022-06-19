@@ -2,7 +2,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/inter-400.woff2") format("woff2");
+  src: url("../fonts/inter-400.woff2") format("woff2");
 
   font-display: swap;
 }
@@ -11,7 +11,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/inter-700.woff2") format("woff2");
+  src: url("../fonts/inter-700.woff2") format("woff2");
 
   font-display: swap;
 }
@@ -20,7 +20,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
-  src: url("fonts/inter-900.woff2") format("woff2");
+  src: url("../fonts/inter-900.woff2") format("woff2");
 
   font-display: swap;
 }
@@ -47,15 +47,10 @@ body {
   font-weight: 400;
 }
 
-.main-header {
-  color: #2D3440;
-  background-color: #FEAFC3;
-}
 
 .navigation-link {
   line-height: 20px;
   color: #2D3440;
-  background-color: #FEAFC3;
   text-align: center;
   text-decoration: none;
 }
@@ -63,7 +58,6 @@ body {
 .user-navigation-link {
   line-height: 20px;
   color: #2D3440;
-  background-color: #FEAFC3;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
@@ -74,14 +68,13 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #2D3440;
-  background-color: #FFCBD8;
+  background-color: rgba(252, 252, 252, 0.3);
 }
 
 .slider-text-heading {
   font-size: 36px;
   line-height: 46px;
   color: #2D3440;
-  background-color: #FEAFC3;
   font-weight: 900;
 }
 
@@ -89,13 +82,14 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #2D3440;
-  background: #FEAFC3;
 }
 
 .slider-text-link,
 .present-item-link,
 .delivery-order label,
 .show-more-button {
+  font-family: 'Inter';
+  font-style: normal;
   font-size: 16px;
   line-height: 20px;
   color: #2D3440;
@@ -114,12 +108,6 @@ body {
   line-height: 46px;
   color: #2D3440;
   font-weight: 900;
-}
-
-.promo-presents-heading,
-.promo-popular-heading,
-.catalog h1 {
-  background-color: #FEAFC3;
 }
 
 .promo-item-heading,
@@ -154,16 +142,13 @@ body {
   text-align: center;
 }
 
-.advantages-heading {
-  background-color: #FCFCFC;
-}
-
+.advantages-heading,
 .advantages-item {
   background-color: #FCFCFC;
 }
 
 .new-post {
-  background: url("/images/new-post-background.png") no-repeat;
+  background: url("../images/new-post-background.png") no-repeat;
 }
 
 .new-post,
@@ -186,7 +171,7 @@ body {
 }
 
 .delivery {
-  background-image: url("/images/delivery-background.png") no-repeat;
+  background: url("../images/delivery-background.png") no-repeat;
 }
 
 .subscribe-text,
@@ -199,6 +184,9 @@ body {
 .subscribe-button,
 .delivery-button,
 .info-button {
+  font-family: 'Inter';
+  font-style: normal;
+  font-size: 16px;
   line-height: 20px;
   color: #FCFCFC;
   background-color: #FF2F64;
@@ -225,7 +213,6 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #2D3440;
-  background-color: #FEAFC3;
   font-weight: 400;
   text-decoration: none;
 }
@@ -244,14 +231,12 @@ body {
   font-size: 12px;
   line-height: 16px;
   color: #2D3440;
-  background-color: #FEAFC3;
 }
 
 .breadcrumbs-link {
 font-size: 14px;
 line-height: 20px;
 color: #2D3440;
-background-color: #FEAFC3;
 font-weight: 700;
 }
 
@@ -263,14 +248,15 @@ font-weight: 700;
   font-size: 14px;
   line-height: 20px;
   color: #2D3440;
-  background-color: #FEAFC3;
 }
 
 .sort-form-button {
+  font-family: 'Inter';
+  font-style: normal;
   font-size: 14px;
   line-height: 20px;
   color: #2D3440;
-  background-color: #FFCBD8;
+  background-color: rgba(252, 252, 252, 0.3);
   font-weight: 700;
   text-align: center;
 }
@@ -278,7 +264,7 @@ font-weight: 700;
 .sort-by,
 .fat-list,
 .fillers-list {
-  background-color: #FFCBD8;
+  background: rgba(252, 252, 252, 0.3);
 }
 
 .pagination-link {

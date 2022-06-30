@@ -68,9 +68,9 @@ body {
 
 .main-header {
   display: flex;
-  width: 1366px;
+  width: 1230px;
   margin: 0 auto;
-  padding: 0 98px;
+  padding: 0 30px;
 }
 
 .navigation {
@@ -82,6 +82,7 @@ body {
 .navigation-list, .user-navigation-list {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 .user-navigation {
@@ -92,15 +93,15 @@ body {
 }
 
 .slider {
-  width: 1366px;
+  width: 1230px;
   margin: 0 auto;
-  padding: 0 98px;
+  padding: 0 30px;
 }
 
 .promo-presents {
-  width: 1366px;
+  width: 1230px;
   margin: 0 auto;
-  padding: 0 98px;
+  padding: 0 30px;
 }
 
 .promo-presents-heading {
@@ -118,9 +119,9 @@ body {
 }
 
 .promo-popular {
-  width: 1366px;
+  width: 1230px;
   margin: 0 auto;
-  padding: 0 98px;
+  padding: 0 30px;
 }
 
 .promo-popular-heading {
@@ -130,7 +131,6 @@ body {
 
 .product-list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -138,25 +138,33 @@ body {
   list-style: none;
 }
 
+.product-item {
+  margin-right: 30px;
+  margin-bottom: 40px;
+}
+
+.product-item:nth-of-type(4n) {
+  margin-right: 0;
+}
+
 .product {
   width: 270px;
 }
 
 .advantages-wrapper {
-  width: 1366px;
+  width: 1230px;
   margin: 0 auto;
-  padding: 0 98px;
+  padding: 24px 54px;
 }
 
 .advantages {
   width: 1122px;
-  margin: 24px;
 }
 
 .new-post-subscribe-wrapper {
-  width: 1366px;
+  width: 1230px;
   margin: 0 auto;
-  padding: 0 98px;
+  padding: 0 30px;
 
   display: flex;
   justify-content: space-between;
@@ -167,28 +175,35 @@ body {
 }
 
 .delivery {
-  width: 1366px;
+  width: 1230px;
   margin: 0 auto;
-  padding: 0 98px;
+  padding: 0 30px;
 }
 
-.info-wrapper {
-  width: 1366px;
-  margin: 0 auto;
-  padding: 0 98px;
-
-  background: url("../images/info-backgroud.jpg") no-repeat;
+.delivery-wrapper {
+  background: url("../images/delivery-background.png") no-repeat;
 }
 
 .info {
+  width: 1230px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.info-wrapper {
+  background: url("../images/info-backgroud.jpg") no-repeat;
+}
+
+.info-about-shop-wrapper {
   width: 343px;
   height: 364px;
+  background-color: #FCFCFC;
 }
 
 .main-footer {
-  width: 1366px;
+  width: 1230px;
   margin: 0 auto;
-  padding: 0 98px;
+  padding: 0 30px;
   display: flex;
 }
 
@@ -212,8 +227,8 @@ body {
 }
 
 .catalog {
-  width: 1366px;
-  padding: 0 98px;
+  width: 1230px;
+  padding: 0 30px;
   margin: 0 auto;
 }
 
@@ -325,9 +340,12 @@ body {
   font-weight: 700;
 }
 
+.present-item {
+  background-color: #FF7799;
+}
+
 .promo-item-description {
   color: #2D3440;
-  background-color: #FF7799;
 }
 
 .product-name,
@@ -358,11 +376,9 @@ body {
 }
 
 .new-post,
-.delivery,
 .subscribe,
 .advantages,
-.product,
-.info {
+.product {
   background-color: #FCFCFC;
 }
 
@@ -374,10 +390,6 @@ body {
 .new-post-link {
   background-color: #FCFCFC;
   text-decoration: none;
-}
-
-.delivery {
-  background: url("../images/delivery-background.png") no-repeat;
 }
 
 .delivery-order label {

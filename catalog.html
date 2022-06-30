@@ -11,7 +11,7 @@
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">
-              <img src="images/gllacy-logo.svg" width="137" height="55,72" alt="Логотип Глейси">
+              <img src="images/gllacy-logo.svg" width="137" height="56" alt="Логотип Глейси">
             </a>
           </li>
           <li class="navigation-item">
@@ -49,7 +49,7 @@
       </div>
     </header>
 
-    <main>
+    <main class="main-container">
       <section class="catalog">
         <ul class="breadcrumbs-list">
           <li class="breadcrumbs-item">
@@ -59,7 +59,7 @@
             <a class="breadcrumbs-link" href="#">Каталог</a>
           </li>
         </ul>
-        <h1>Сливочное мороженое</h1>
+        <h1 class="catalog-heading">Сливочное мороженое</h1>
         <section class="sort">
           <h2 class="visually-hidden">Фильтр мороженого</h2>
           <form class="sort-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -124,7 +124,6 @@
                 </li>
               </ul>
             </fieldset>
-
             <button class="sort-form-button" type="submit">Применить</button>
           </form>
         </section>
@@ -137,7 +136,7 @@
                 <img src="images/ice-cream-raspberry.jpg" width="168" height="168" alt="Малиновое мороженое">
                 <h3 class="product-name">Малинка</h3>
                 <p class="product-description">Сливочное мороженое с малиновым джемом</p>
-                <span>310 &#8381;/кг</span>
+                <span class="product-price">310 &#8381;/кг</span>
                 <button type="button">
                   <span class="visually-hidden">Добавить в корзину</span>
                 </button>
@@ -266,39 +265,39 @@
             </li>
           </ul>
         </section>
-
-        <button class="show-more-button">Показать ещё</button>
-
-        <section class="pagination">
-          <h2 class="visually-hidden">Пагинация</h2>
-          <ul class="pagination-list">
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">
-                <span class="visually-hidden">Предыдущая страница</span>
-              </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link on-third-page" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">5</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">
-                <span class="visually-hidden">Следующая страница</span>
-              </a>
-            </li>
-          </ul>
-        </section>
+        <div class="show-more-pagination-wrapper">
+          <button class="show-more-button">Показать ещё</button>
+          <section class="pagination">
+            <h2 class="visually-hidden">Пагинация</h2>
+            <ul class="pagination-list">
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">
+                  <span class="visually-hidden">Предыдущая страница</span>
+                </a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link on-third-page" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">5</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">
+                  <span class="visually-hidden">Следующая страница</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
       </section>
     </main>
 
@@ -341,7 +340,7 @@
       </div>
       <div class="made-by">
         <a href="https://htmlacademy.ru/">
-          <img src="images/logo-htmlacademy.svg" width="93" height="26,71" alt="Логотип HTMLAcademy">
+          <img src="images/logo-htmlacademy.svg" width="93" height="27" alt="Логотип HTMLAcademy">
         </a>
         <span>Сделано в</span>
         <a class="made-by-text-link" href="https://htmlacademy.ru/">.html academy</a>

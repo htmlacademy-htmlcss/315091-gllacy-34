@@ -25,6 +25,12 @@
   font-display: swap;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+ }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -38,7 +44,16 @@
   overflow: hidden;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+
   font-family: "Inter", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -47,6 +62,213 @@ body {
   font-weight: 400;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
+.main-header {
+  display: flex;
+  width: 1230px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.navigation {
+  width: 540px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-list, .user-navigation-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user-navigation {
+  width: 480px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+}
+
+.slider {
+  width: 1230px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.promo-presents {
+  width: 1230px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.promo-presents-heading {
+  text-align: center;
+  margin: 0;
+}
+
+.presents-promo-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.present-item {
+  width: 570px;
+}
+
+.promo-popular {
+  width: 1230px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.promo-popular-heading {
+  text-align: center;
+  margin: 0;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.product-item {
+  margin-right: 30px;
+  margin-bottom: 40px;
+}
+
+.product-item:nth-of-type(4n) {
+  margin-right: 0;
+}
+
+.product {
+  width: 270px;
+}
+
+.advantages-wrapper {
+  width: 1230px;
+  margin: 0 auto;
+  padding: 24px 54px;
+}
+
+.advantages {
+  width: 1122px;
+}
+
+.new-post-subscribe-wrapper {
+  width: 1230px;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-post, .subscribe {
+  width: 570px;
+}
+
+.delivery {
+  width: 1230px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.delivery-wrapper {
+  background: url("../images/delivery-background.png") no-repeat;
+}
+
+.info {
+  width: 1230px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.info-wrapper {
+  background: url("../images/info-backgroud.jpg") no-repeat;
+}
+
+.info-about-shop-wrapper {
+  width: 343px;
+  height: 364px;
+  background-color: #FCFCFC;
+}
+
+.main-footer {
+  width: 1230px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+}
+
+.main-footer .social {
+  width: 104px;
+}
+
+.documents {
+  margin-left: 299px;
+}
+
+.documents-list, .social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.made-by {
+  width: 193px;
+  margin-left: auto;
+}
+
+.catalog {
+  width: 1230px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.breadcrumbs-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sort {
+  width: 823px;
+}
+
+.catalog-heading {
+  margin: 0;
+}
+
+.products {
+  margin: 0 auto;
+}
+
+.show-more-pagination-wrapper {
+  margin: 0 auto;
+  display: flex;
+}
+
+.show-more-button {
+  margin-right: 335px;
+  margin-left: auto;
+}
+
+.pagination {
+  width: 168px;
+}
+
+.pagination-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
 .navigation-link {
   line-height: 20px;
@@ -64,7 +286,7 @@ body {
   text-transform: uppercase;
 }
 
-.user-navigation-text {
+.user-navigation-button {
   font-size: 14px;
   line-height: 20px;
   color: #2D3440;
@@ -86,9 +308,8 @@ body {
 
 .slider-text-link,
 .present-item-link,
-.delivery-order label,
 .show-more-button {
-  font-family: 'Inter';
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
@@ -119,9 +340,12 @@ body {
   font-weight: 700;
 }
 
+.present-item {
+  background-color: #FF7799;
+}
+
 .promo-item-description {
   color: #2D3440;
-  background-color: #FF7799;
 }
 
 .product-name,
@@ -152,11 +376,9 @@ body {
 }
 
 .new-post,
-.delivery,
 .subscribe,
 .advantages,
-.product,
-.info {
+.product {
   background-color: #FCFCFC;
 }
 
@@ -170,8 +392,12 @@ body {
   text-decoration: none;
 }
 
-.delivery {
-  background: url("../images/delivery-background.png") no-repeat;
+.delivery-order label {
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D3440;
+  background-color: #FCFCFC;
+  font-weight: 700;
 }
 
 .subscribe-text,
@@ -251,7 +477,7 @@ font-weight: 700;
 }
 
 .sort-form-button {
-  font-family: 'Inter';
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 20px;

@@ -31,17 +31,17 @@
             <a class="user-navigation-link" href="tel:78005558628">+7 800 555-86-28</a>
           </li>
           <li class="user-navigation-item">
-            <button type="button">
+            <button class="user-navigation-button" type="button">
               <span class="visually-hidden">Поиск</span>
             </button>
           </li>
           <li class="user-navigation-item">
-            <button type="button">
+            <button class="user-navigation-button" type="button">
               <span class="user-navigation-text">Вход</span>
             </button>
           </li>
           <li class="user-navigation-item">
-            <button type="button">
+            <button class="user-navigation-button" type="button">
               <span class="user-navigation-text">2 товара</span>
             </button>
           </li>
@@ -63,8 +63,8 @@
         <section class="sort">
           <h2 class="visually-hidden">Фильтр мороженого</h2>
           <form class="sort-form" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset>
-              <legend>Сортировка:</legend>
+            <fieldset class="fieldset-sort">
+              <legend class="fieldset-sort-text">Сортировка:</legend>
               <select class="sort-by" id="sort-by" name="sort-by">
                 <option value="by-popularity">по популярности</option>
                 <option value="by-cheap">сначала дешёвые</option>
@@ -73,12 +73,12 @@
               </select>
             </fieldset>
 
-            <fieldset>
-              <legend>Цена:</legend>
+            <fieldset class="fieldset-price">
+              <legend class="fieldset-price-text">Цена:</legend>
             </fieldset>
 
-            <fieldset>
-              <legend>Жирность:</legend>
+            <fieldset class="fieldset-fat">
+              <legend class="fieldset-fat-text">Жирность:</legend>
               <ul class="fat-list">
                 <li class="fat-item">
                   <input id="nonfat" type="radio" name="fat" value="nonfat">
@@ -99,8 +99,8 @@
               </ul>
             </fieldset>
 
-            <fieldset>
-              <legend>Наполнители:</legend>
+            <fieldset class="fieldset-fillers">
+              <legend class="fieldset-fillers-text">Наполнители:</legend>
               <ul class="fillers-list">
                 <li class="fillers-item">
                   <input id="chocolate" type="checkbox" name="chocolate" checked>
@@ -328,10 +328,10 @@
             <a class="documents-link" href="#">Для поставщиков</a>
           </li>
           <li class="documents-item">
-            <a class="documents-link" href="#">О производстве</a>
+            <a class="documents-link" href="#">Наши документы</a>
           </li>
           <li class="documents-item">
-            <a class="documents-link" href="#">Наши документы</a>
+            <a class="documents-link" href="#">О производстве</a>
           </li>
           <li class="documents-item">
             <a class="documents-link" href="#">Экологические стандарты</a>
@@ -339,7 +339,7 @@
         </ul>
       </div>
       <div class="made-by">
-        <a href="https://htmlacademy.ru/">
+        <a class="made-by-link" href="https://htmlacademy.ru/">
           <img src="images/logo-htmlacademy.svg" width="93" height="27" alt="Логотип HTMLAcademy">
         </a>
         <span>Сделано в</span>

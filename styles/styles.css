@@ -272,32 +272,40 @@ body {
 }
 
 .product-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  row-gap: 40px;
+  column-gap: 30px;
   margin: 0;
   padding: 0;
 
   list-style-type: none;
 }
 
-.product-item {
-  margin-right: 30px;
-  margin-bottom: 40px;
-}
-
-.product-item:nth-of-type(4n) {
-  margin-right: 0;
-}
-
-.product-item-index-page {
-  margin-bottom: 0;
-}
-
 .product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.product-image {
+  position: absolute;
+  left: 51px;
+  top: 0;
+}
+
+.product-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 270px;
+  background-color: #FCFCFC;
   padding-right: 40px;
   padding-left: 40px;
   padding-bottom: 24px;
+  padding-top: 133px;
+  margin-top: 51px;
 }
 
 .product-name, .product-description {
@@ -312,6 +320,24 @@ body {
   margin-bottom: 16px;
 }
 
+.product-price-button-wrapper {
+  display: flex;
+  align-items: center;
+  width: 190px;
+}
+
+.product-price {
+  margin-right: auto;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.product-button {
+  min-height: 32px;
+  min-width: 32px;
+  padding: 0;
+}
+
 .advantages-wrapper {
   width: 1230px;
   margin: 0 auto;
@@ -321,7 +347,8 @@ body {
 
 .advantages-waffle-wrapper {
   padding: 24px;
-  background: url("../images/advantages-waffle.jpg") no-repeat 50% 50%;
+  background: url("../images/advantages-waffle.jpg") 50% 50%;
+  background-size: cover;
 }
 
 .advantages {
@@ -375,6 +402,7 @@ body {
   padding: 6px;
 
   background: url("../images/subscribe-background.png") no-repeat 50% 50%;
+  background-size: cover;
 }
 
 .subscribe {
@@ -385,6 +413,12 @@ body {
 .subscribe-text {
   margin: 0;
   margin-bottom: 42px;
+}
+
+.subscribe-form {
+  display: grid;
+  grid-template-columns: 332px 1fr;
+  column-gap: 14px;
 }
 
 .subscribe-button {
@@ -402,6 +436,7 @@ body {
   display: flex;
   padding: 64px 64px 64px 100px;
   background: url("../images/delivery-background.png") no-repeat 50% 50%;
+  background-size: cover;
 }
 
 .delivery-promo {
@@ -427,8 +462,38 @@ body {
   margin-bottom: 32px;
 }
 
+.delivery-form {
+  display: grid;
+  grid-template-columns: 117px 287px;
+  row-gap: 20px;
+  column-gap: 16px;
+}
+.delivery-form-date,
+.delivery-form-telephone,
+.delivery-form-address {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.delivery-form-date-text,
+.delivery-form-telephone-text,
+.delivery-form-address-text {
+  margin-bottom: 8px;
+}
+
+.delivery-form-address {
+  grid-column: 1 / -1;
+}
+
+.delivery-button {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+
 .delivery-button {
   padding: 12px 32px;
+  margin-top: 12px;
 }
 
 .info {
@@ -587,6 +652,15 @@ body {
   margin: 0;
   list-style-type: none;
 }
+.fat-item,
+.fillers-item {
+  margin-right: 16px;
+}
+
+.fat-item:last-of-type,
+.fillers-item:last-of-type {
+  margin-right: 0;
+}
 
 .fieldset-fillers {
   width: 604px;
@@ -599,6 +673,7 @@ body {
   display: flex;
   padding: 9px 24px;
   margin: 0;
+  list-style-type: none;
 }
 
 .fieldset-sort-text,
@@ -760,12 +835,12 @@ body {
 
 .new-post {
   background: url("../images/new-post-background.png") no-repeat;
+  background-size: cover;
 }
 
 .new-post,
 .subscribe,
-.advantages,
-.product {
+.advantages {
   background-color: #FCFCFC;
 }
 
@@ -774,7 +849,6 @@ body {
 }
 
 .new-post-link {
-  background-color: #FCFCFC;
   text-decoration: none;
 }
 

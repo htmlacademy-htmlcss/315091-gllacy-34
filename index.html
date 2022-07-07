@@ -160,46 +160,62 @@
         <ul class="product-list">
           <li class="product-item product-item-index-page">
             <article class="product">
-              <img src="images/ice-cream-raspberry.jpg" width="168" height="168" alt="Малиновое мороженое">
-              <h3 class="product-name">Малинка</h3>
-              <p class="product-description">Сливочное мороженое с малиновым джемом</p>
-              <span class="product-price"> 310 &#8381;/кг</span>
-              <button type="button">
-                <span class="visually-hidden">Добавить в корзину</span>
-              </button>
+              <img class="product-image" src="images/ice-cream-raspberry.jpg" width="168" height="168" alt="Малиновое мороженое">
+                <div class="product-text-wrapper">
+                <h3 class="product-name">Малинка</h3>
+                <p class="product-description">Сливочное мороженое с малиновым джемом</p>
+                <div class="product-price-button-wrapper">
+                  <span class="product-price"> 310 &#8381;/кг</span>
+                  <button class="product-button" type="button">
+                    <span class="visually-hidden">Добавить в корзину</span>
+                  </button>
+                </div>
+              </div>
             </article>
           </li>
           <li class="product-item product-item-index-page">
             <article class="product">
-              <img src="images/ice-cream-pistachio.jpg" width="168" height="168" alt="Фисташковое мороженое с кусочками шоколада">
-              <h3 class="product-name">Фисташка</h3>
-              <p class="product-description">Фисташковый пломбир с кусочками шоколада</p>
-              <span class="product-price">340 &#8381;/кг</span>
-              <button type="button">
-                <span class="visually-hidden">Добавить в корзину</span>
-              </button>
+              <img class="product-image" src="images/ice-cream-pistachio.jpg" width="168" height="168" alt="Фисташковое мороженое с кусочками шоколада">
+              <div class="product-text-wrapper">
+                <h3 class="product-name">Фисташка</h3>
+                <p class="product-description">Фисташковый пломбир с кусочками шоколада</p>
+                <div class="product-price-button-wrapper">
+                  <span class="product-price">340 &#8381;/кг</span>
+                  <button class="product-button" type="button">
+                    <span class="visually-hidden">Добавить в корзину</span>
+                  </button>
+                </div>
+              </div>
             </article>
           </li>
           <li class="product-item product-item-index-page">
             <article class="product">
-              <img src="images/ice-cream-blueberry.jpg" width="168" height="168" alt="Крем-брюле с черничным джемом">
-              <h3 class="product-name">Черника</h3>
-              <p class="product-description">Крем-брюле с черничным джемом</p>
-              <span class="product-price">330 &#8381;/кг</span>
-              <button type="button">
-                <span class="visually-hidden">Добавить в корзину</span>
-              </button>
+              <img class="product-image" src="images/ice-cream-blueberry.jpg" width="168" height="168" alt="Крем-брюле с черничным джемом">
+              <div class="product-text-wrapper">
+                <h3 class="product-name">Черника</h3>
+                <p class="product-description">Крем-брюле с черничным джемом</p>
+                <div class="product-price-button-wrapper">
+                  <span class="product-price">330 &#8381;/кг</span>
+                  <button class="product-button" type="button">
+                    <span class="visually-hidden">Добавить в корзину</span>
+                  </button>
+                </div>
+              </div>
             </article>
           </li>
           <li class="product-item product-item-index-page">
             <article class="product">
-              <img src="images/ice-cream-bubble-gum.jpg" width="168" height="168" alt="Пломбир голубого цвета с цветной посыпкой">
-              <h3 class="product-name">Бабл-гам</h3>
-              <p class="product-description">Ванильный пломбир со сладкой посыпкой</p>
-              <span class="product-price"> 320 &#8381;/кг</span>
-              <button type="button">
-                <span class="visually-hidden">Добавить в корзину</span>
-              </button>
+              <img class="product-image" src="images/ice-cream-bubble-gum.jpg" width="168" height="168" alt="Пломбир голубого цвета с цветной посыпкой">
+              <div class="product-text-wrapper">
+                <h3 class="product-name">Бабл-гам</h3>
+                <p class="product-description">Ванильный пломбир со сладкой посыпкой</p>
+                <div class="product-price-button-wrapper">
+                  <span class="product-price"> 320 &#8381;/кг</span>
+                  <button class="product-button" type="button">
+                    <span class="visually-hidden">Добавить в корзину</span>
+                  </button>
+                </div>
+              </div>
             </article>
           </li>
         </ul>
@@ -241,7 +257,7 @@
             <h2 class="visually-hidden">Подписка</h2>
             <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит.
               Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <form action="https://echo.htmlacademy.ru/" method="post">
+            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
               <input class="subscribe-email-field" type="email" id="email-field" name="email" placeholder="email@example.com">
               <button class="subscribe-button" type="submit">Отправить</button>
             </form>
@@ -260,15 +276,15 @@
             <p class="delivery-order-text">Укажите адрес и дату доставки, и мы свяжемся <br> с вами, чтобы подтвердить заказ.</p>
             <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
               <p class="delivery-form-date">
-                <label for="date">Дата</label>
+                <label class="delivery-form-date-text" for="date">Дата</label>
                 <input type="text" name="delivery-date" id="date" placeholder="01.04.2020" required>
               </p>
               <p class="delivery-form-telephone">
-                <label for="telephone">Телефон</label>
+                <label class="delivery-form-telephone-text" for="telephone">Телефон</label>
                 <input type="tel" name="delivery-telephone" id="telephone" placeholder="+7 800 999-00-00" required>
               </p>
               <p class="delivery-form-address">
-                <label for="address">Адрес</label>
+                <label class="delivery-form-address-text" for="address">Адрес</label>
                 <input type="text" name="address" id="address" placeholder="ул. Большая Конюшенная, 19/8" required>
               </p>
               <button class="delivery-button" type="submit">Отправить</button>
